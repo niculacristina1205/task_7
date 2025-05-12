@@ -13,9 +13,6 @@ public class ProtocolHandler extends AbstractHandler{
             case "TELNET":
                 System.out.println("UNSAFE: Protocol");
                 break;
-            case "HTTP":
-            case "FTP":
-                throw new UnknownDataPackageException("UNKNOWN: Protocol " + protocol);
             default:
                 passToNext(dataPackage);
         }

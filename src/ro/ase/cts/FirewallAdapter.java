@@ -1,9 +1,9 @@
 package ro.ase.cts;
 
-public class FirawallAdapter implements Firewallable {
+public class FirewallAdapter implements Firewallable {
     private final DataPackageHandler entryHandler;
 
-    public FirawallAdapter(DataPackageHandler entryHandler) {
+    public FirewallAdapter(DataPackageHandler entryHandler) {
         this.entryHandler = entryHandler;
     }
 
