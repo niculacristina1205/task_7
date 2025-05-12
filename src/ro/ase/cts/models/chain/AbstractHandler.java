@@ -1,6 +1,10 @@
-package ro.ase.cts;
+package ro.ase.cts.models.chain;
 
-public abstract class AbstractHandler implements  DataPackageHandler {
+import ro.ase.cts.exceptions.UnknownDataPackageException;
+import ro.ase.cts.interfaces.DataPackageHandler;
+import ro.ase.cts.models.DataPackage;
+
+public abstract class AbstractHandler implements DataPackageHandler {
     protected DataPackageHandler next;
 
     @Override

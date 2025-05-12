@@ -1,4 +1,10 @@
-package ro.ase.cts;
+package ro.ase.cts.app;
+
+import ro.ase.cts.interfaces.DataPackageHandler;
+import ro.ase.cts.interfaces.Firewallable;
+import ro.ase.cts.models.DataPackage;
+import ro.ase.cts.models.adapter.FirewallAdapter;
+import ro.ase.cts.models.chain.*;
 
 public class Main {
     public static void main(String[] args) {

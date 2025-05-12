@@ -1,4 +1,4 @@
-package ro.ase.cts;
+package ro.ase.cts.models;
 
 public class DataPackage {
     private String sourceIp;

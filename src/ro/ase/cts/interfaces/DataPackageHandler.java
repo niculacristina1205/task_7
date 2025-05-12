@@ -1,4 +1,6 @@
-package ro.ase.cts;
+package ro.ase.cts.interfaces;
+
+import ro.ase.cts.models.DataPackage;
 
 public interface DataPackageHandler {
     void setNext(DataPackageHandler next);

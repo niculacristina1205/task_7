@@ -1,4 +1,6 @@
-package ro.ase.cts;
+package ro.ase.cts.models.chain;
+
+import ro.ase.cts.models.DataPackage;
 
 public class DestPortHandler extends AbstractHandler {
 

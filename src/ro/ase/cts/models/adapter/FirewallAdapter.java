@@ -1,4 +1,8 @@
-package ro.ase.cts;
+package ro.ase.cts.models.adapter;
+
+import ro.ase.cts.interfaces.DataPackageHandler;
+import ro.ase.cts.interfaces.Firewallable;
+import ro.ase.cts.models.DataPackage;
 
 public class FirewallAdapter implements Firewallable {
     private final DataPackageHandler entryHandler;

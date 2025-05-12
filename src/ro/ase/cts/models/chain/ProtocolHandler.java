@@ -1,6 +1,8 @@
-package ro.ase.cts;
+package ro.ase.cts.models.chain;
 
-public class ProtocolHandler extends AbstractHandler{
+import ro.ase.cts.models.DataPackage;
+
+public class ProtocolHandler extends AbstractHandler {
     @Override
     public void handle(DataPackage dataPackage) {
         String protocol = dataPackage.getProtocol().toUpperCase();

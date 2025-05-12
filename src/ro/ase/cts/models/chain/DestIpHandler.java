@@ -1,6 +1,9 @@
-package ro.ase.cts;
+package ro.ase.cts.models.chain;
 
-public class DestIpHandler extends AbstractHandler{
+import ro.ase.cts.exceptions.UnknownDataPackageException;
+import ro.ase.cts.models.DataPackage;
+
+public class DestIpHandler extends AbstractHandler {
     @Override
     public void handle(DataPackage dataPackage) {
         String destIp = dataPackage.getDestIp();
