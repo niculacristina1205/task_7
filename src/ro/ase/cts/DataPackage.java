@@ -1,3 +1,5 @@
+package ro.ase.cts;
+
 public class DataPackage {
     private String sourceIp;
     private String destIp;
