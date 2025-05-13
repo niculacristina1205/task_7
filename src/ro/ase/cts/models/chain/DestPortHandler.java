@@ -12,6 +12,7 @@ public class DestPortHandler extends AbstractHandler {
         } else if (port >= 49152 && port <= 65535) {
             System.out.println("UNSAFE: Destination port");
         } else {
+            System.out.println("UNKNOWN: Destination port");
             passToNext(dataPackage);
         }
     }

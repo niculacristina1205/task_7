@@ -7,12 +7,11 @@ public class DestIpHandler extends AbstractHandler {
     @Override
     public void handle(DataPackage dataPackage) {
         String destIp = dataPackage.getDestIp();
-        if ("192.168.0.1".equals(destIp)) {
+        if (destIp.equals("192.168.0.1")) {
             System.out.println("SAFE: Destination IP");
-        } else if (destIp != null) {
-            passToNext(dataPackage);
         } else {
-            throw new UnknownDataPackageException("Destination IP is null or invalid.");
+            System.out.println("UNKNOWN: Destination IP");
+            passToNext(dataPackage);
         }
     }
 }

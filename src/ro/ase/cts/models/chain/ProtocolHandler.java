@@ -16,6 +16,7 @@ public class ProtocolHandler extends AbstractHandler {
                 System.out.println("UNSAFE: Protocol");
                 break;
             default:
+                System.out.println("UNKNOWN: Protocol");
                 passToNext(dataPackage);
         }
     }

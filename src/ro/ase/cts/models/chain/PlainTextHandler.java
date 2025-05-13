@@ -9,7 +9,8 @@ public class PlainTextHandler extends AbstractHandler {
         if (dataPackage.isPlainText()) {
             System.out.println("SAFE: Plaintext is allowed");
         } else {
-            throw new UnknownDataPackageException("UNKNOWN: Cannot determine encryption state");
+            System.out.println("UNKNOWN: Plaintext is allowed");
+            throw new UnknownDataPackageException("UNKNOWN - Cannot determine encryption state");
         }
     }
 }
